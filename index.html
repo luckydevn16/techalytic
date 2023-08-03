@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Welcome! | Techalytic</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/flag.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <section class="section-hero">
+            <div class="container">
+                <div class="header flex justify-between">
+                    <img src="assets/img/logo.png" alt="logo" class="logo-img">
+                    <div class="header-promo flex">
+                        <img src="assets/img/flag.png" alt="flag" class="header-promo-img">
+                        <p class="header-promo-text">
+                            Exclusive offer for Australians
+                        </p>
+                    </div>
+                </div>
+                <div class="hero-content flex justify-between align-start">
+                    <div class="hero-content__video-wrapper">
+                        <h1 class="main-heading">
+                            Earning online can be easy. <span class="text-yellow">Watch this video to get all the details!</span>
+                        </h1>
+                        <div class="video-wrapper video">
+                            <video width="100%" playsinline controls controlsList="nodownload" poster="assets/video/poster.png"></video>
+                            <div class="play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="hero-content__form-wrapper form">
+                        <h3 class="form-heading">
+                            Sing up <br>
+                            <span class="text-yellow">only <span id="randomInteger">8</span> places left</span>
+                        </h3>
+                        <form action="thankyou.html" class="form" onsubmit="event.preventDefault(); formSubmission()">
+                            <div class="input-wrap">
+                                <input type="text" class="form-input name" placeholder="Your Name">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input lastname" placeholder="Your Lastname">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input email" placeholder="Your Email">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" class="form-input phone" placeholder="Your Phone">
+                            </div>
+                            <div class="required-fields">
+                                Please fill in all the fields
+                            </div>
+                            <div class="input-wrap">
+                                <button class="btn alert-btn">Get Access Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-about">
+            <div class="container">
+                <h2 class="section__heading animated">
+                    Techalytic platform 📋
+                </h2>
+                <div class="about-content flex justify-between animated">
+                    <div class="about-content-text">
+                        <h3 class="animated">Your prosperous financial future is within your arm's reach</h3>
+                        <p class="section__text animated">
+                            The financial crisis takes the whole world by storm. It changes our lives drastically, making people rethink how they can keep their financial well-being afloat. With this in mind, CommBank, the largest bank in Australia, developed an AI-powered software solution to help Australians win the fight against financial turmoil. Meet Techalytic, an investing platform that generates passive income daily with just a few clicks. Financial technologies, along with AI, make this app so unique. Techalytic investment platform fits both: newbies and experienced investors as it's precisely tailored to give you a smooth investing experience with no-hassle onboarding and delightful features. But the main benefit you'll get is precious - good money to give your family a better life.
+                        </p>
+                        <button class="btn animated" onclick="scrollToForm()">Get the offer</button>
+                    </div>
+                    <div class="about-content-img"></div>
+                </div>
+            </div>
+            <img src="assets/img/decor-001.png" alt="decor" class="about-decor left">
+            <img src="assets/img/decor-002.png" alt="decor" class="about-decor right">
+        </section>
+        <section class="section-offers">
+            <div class="container">
+                <h2 class="section__heading animated">
+                    World's resources are yours! 💪
+                </h2>
+                <div class="offers-cards-wrapper flex justify-between">
+                    <div class="offer-card animated">
+                        <div class="offer-card-img-wrapper">
+                            <img src="assets/img/offer-001.png" alt="offer" class="offer-card-img">
+                            <div class="offer-tag">
+                                HOT OFFER 🔥
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-heading">BHP Group</h3>
+                            <p class="card-text">
+                                BHP is an Anglo-Australian multinational mining, metals and petroleum company based in Melbourne, Victoria, Australia.
+                            </p>
+                            <p class="card-benefit">
+                                Profit:  <span class="text-yellow">+<span class="counter" data-to="13" data-stop="0">0</span>%</span> in the last month
+                            </p>
+                            <button class="btn" onclick="scrollToForm()">register now</button>
+                        </div>
+                    </div>
+                    <div class="offer-card animated">
+                        <div class="offer-card-img-wrapper">
+                            <img src="assets/img/offer-002.png" alt="offer" class="offer-card-img">
+                            <div class="offer-tag">
+                                HOT OFFER 🔥
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-heading">Atlassian</h3>
+                            <p class="card-text">
+                                Atlassian - Australian software company that develops products for software developers, project managers and other software development teams.
+                            </p>
+                            <p class="card-benefit">
+                                Profit:  <span class="text-yellow">+<span class="counter" data-to="19" data-stop="0">0</span>%</span> in the last month
+                            </p>
+                            <button class="btn" onclick="scrollToForm()">register now</button>
+                        </div>
+                    </div>
+                    <div class="offer-card animated">
+                        <div class="offer-card-img-wrapper">
+                            <img src="assets/img/offer-003.png" alt="offer" class="offer-card-img">
+                            <div class="offer-tag">
+                                HOT OFFER 🔥
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-heading">Macquarie Group Ltd</h3>
+                            <p class="card-text">
+                                Macquarie is a global investment banking and securities trading company based in the Australian city of Sydney.
+                            </p>
+                            <p class="card-benefit">
+                                Profit:  <span class="text-yellow">+<span class="counter" data-to="24" data-stop="0">0</span>%</span> in the last month
+                            </p>
+                            <button class="btn" onclick="scrollToForm()">register now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/decor-003.png" alt="decor" class="offers-decor left">
+            <img src="assets/img/decor-004.png" alt="decor" class="offers-decor right">
+        </section>
+        <section class="section-steps">
+            <div class="container">
+                <h2 class="section__heading animated">
+                    how does it work? ⚙️  
+                </h2>
+                <div class="steps-cards-wrapper flex justify-center">
+                    <div class="steps-card animated">
+                        <div class="steps-card__img-wrapper">
+                            <img src="assets/img/add-user-001.png" alt="step" class="steps-card__img">
+                        </div>
+                        <div class="steps-card-content flex">
+                            <div class="steps-card-number text-yellow">1.</div>
+                            <h4 class="card-heading">Register in the system</h4>
+                        </div>
+                    </div>
+                    <img src="assets/img/arrow.svg" alt="arrow" class="steps__arrow-img animated">
+                    <div class="steps-card animated">
+                        <div class="steps-card__img-wrapper">
+                            <img src="assets/img/add-user-002.png" alt="step" class="steps-card__img">
+                        </div>
+                        <div class="steps-card-content flex">
+                            <div class="steps-card-number text-yellow">2.</div>
+                            <h4 class="card-heading">Talk with your account manager</h4>
+                        </div>
+                    </div>
+                    <img src="assets/img/arrow.svg" alt="arrow" class="steps__arrow-img animated">
+                    <div class="steps-card animated">
+                        <div class="steps-card__img-wrapper">
+                            <img src="assets/img/add-user-003.png" alt="step" class="steps-card__img">
+                        </div>
+                        <div class="steps-card-content flex justify-center">
+                            <div class="steps-card-number text-yellow">3.</div>
+                            <h4 class="card-heading">Discuss an affordable amount to start</h4>
+                        </div>
+                    </div>
+                    <img src="assets/img/arrow.svg" alt="arrow" class="steps__arrow-img animated">
+                    <div class="steps-card animated">
+                        <div class="steps-card__img-wrapper">
+                            <img src="assets/img/add-user-004.png" alt="step" class="steps-card__img">
+                        </div>
+                        <div class="steps-card-content flex">
+                            <div class="steps-card-number text-yellow">4.</div>
+                            <h4 class="card-heading">Verify your identity</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-calculator">
+            <div class="container">
+                <h2 class="section__heading animated">
+                    PROFIT CALCULATOR 🤑
+                </h2>
+                <form action="javascript:void(0)" class="profit-calculator-wrapper animated">
+					<h3 class="invest-heading">your investment:</h3>
+					<div class="your-invest">
+						<input type="text" class="js-range-slider irs-hidden-input" name="my_range" value="150" tabindex="-1" readonly="" />
+					</div>
+					<div class="your-profit">
+						<label class="profit-label">Your profits:</label>
+						<h3 id="calcResult"></h3>
+					</div>
+					<div class="range-btn">
+						<button class="btn" onclick="scrollToForm()">
+							make profit now
+						</button>
+					</div>
+				</form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container flex justify-between">
+                <img src="assets/img/logo.png" alt="logo" class="logo-img" onclick="scrollToTop()">
+                <div class="footer-links">
+                    <a href="javascript:void(0)" class="alterlink footer-link">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="alterlink footer-link">Terms of use</a>
+                </div>
+                <p class="footer-copyright">
+                    Techalytic © <span id="currentYear">2022</span> All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+	<script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+	<script src="assets/js/ion.rangeSlider.min.js" defer></script>
+</body>
+</html>
